@@ -19,7 +19,9 @@ The morning ritual. Goal: get the user from "starting work" to "I have a concret
 ### 2. Surface the roadmap
 
 - Read `north-star.md` and pull out the **"Now" box** from section 5 (Current Roadmap).
-- Show it to the user verbatim. Then ask: _"Is what you're about to do today the most direct path toward this?"_
+- Show it to the user verbatim. Then ask: _"What slice of the Now box are you carving out for today?"_
+
+The Now box is a week-sized chunk; the morning intent is a day-sized slice carved out of it. Phrase the question to help the user **choose** today's slice, not to verify a pre-chosen one — many mornings the user is using this ritual to figure out what today is, not to confirm it. Acceptable slices include a sub-component, a decision (e.g. "pick SQS vs Postgres"), a spike, a UI sketch, or a planning/architecture pass — anything day-sized that moves the week forward.
 
 ### 3. Soft branch: stale "Now"?
 
@@ -38,6 +40,7 @@ Ask one question at a time. Capture answers in the corresponding blockquotes und
 3. **Done looks like:** an observable end-state.
 
 Push back when intents are vague or oversized. Examples:
+
 - "Make progress on auth" → not a real intent.
 - "Wire up the OAuth callback so I can log in with Google" → real.
 
