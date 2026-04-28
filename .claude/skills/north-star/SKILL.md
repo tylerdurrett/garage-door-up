@@ -90,7 +90,14 @@ Then add a one-line pointer based on their step 6 answer:
 - If they chose Sunday or Monday: _"You can run `/plan-week` [chosen timing] to ground the week, or skip it. `/start-day` runs daily either way."_
 - If they chose skip: _"`/plan-week` is there if you want it later. `/start-day` runs daily either way."_
 
-### 10. Stop
+### 10. Commit & push
+
+Per `AGENTS.md` ("Persist the work"), stage and commit the files this ritual touched, then push if a remote exists.
+
+- **Files to stage:** `north-star.md`, `AGENTS.md`, `README.md`.
+- **Commit message:** `Initialize <project-name> north-star` (use the project name from step 2, exact spelling).
+
+### 11. Stop
 
 Point them at `/start-day` for the next morning (and `/plan-week` for their chosen day, if they picked one). Do not coach further, expand scope, or start working on the project itself.
 

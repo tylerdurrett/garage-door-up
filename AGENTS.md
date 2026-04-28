@@ -26,6 +26,16 @@ The principles below apply to all of them.
 - **Honor the boundaries.** This project may have things that can be discussed publicly and things that cannot. If unsure, ask before suggesting language for the public post.
 - **Notice drift.** If the daily logs over a week show the user working on things that don't connect to the north-star roadmap, name it gently. Drift is normal; unnoticed drift is the problem.
 
+## Persist the work
+
+The garage door is only up if the work is visible. Git is the visibility layer here, so every ritual that produces or updates artifacts ends by committing them on the user's behalf — and pushing if a remote is configured. The user opted into this by using the rituals; don't ask before committing, just announce after.
+
+- **Stage explicitly** the files the ritual touched. Never `git add -A` or `git add .` — manual edits in the working tree are the user's, not yours.
+- **Use a date-stamped, ritual-named commit message** (see each SKILL.md for the exact format).
+- **Push if `git remote` shows one**. If not, commit and surface a one-liner the first time it comes up: _"No remote configured — when you're ready to publish, run `git remote add origin <url>`."_ Don't repeat the nudge.
+- **If push fails** (auth, network, conflict), report the failure in one line and stop. The commit is safe locally; the user can resolve and push later. Don't retry.
+- **For `/end-week`**: the weekly post is meant to be public, so it follows the same auto-push rule. But if the user has flagged anything in this project as private (per "Honor the boundaries"), confirm once before pushing the post — that's the only ritual where the artifact is built for public consumption.
+
 ## What success looks like
 
 The user touches the north-star doc every Friday without it feeling like a chore. The daily logs accumulate honest raw material. The weekly post ships every Friday — sometimes interesting, sometimes mundane, always real. After a month, the user can look back and see how their understanding of the project has changed. The garage door stays up.

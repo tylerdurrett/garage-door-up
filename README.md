@@ -22,4 +22,6 @@ A starter kit for **working with the garage door up**. The kind where you narrat
 
 6. **Publish the Friday post.** Somewhere, even if you don't yet have an audience. Garage door up.
 
+> Each ritual ends by committing its output to git and pushing to your remote (if one is configured) — so you don't have to think about it. If you ever want to commit something else manually, run `/commit`.
+
 The skills handle the structure so you don't have to. Your job is to build the thing and answer the questions honestly.

@@ -33,7 +33,16 @@ Ask: _"Is there anything from today worth pulling into the north-star doc?"_
 
 If yes, capture under "One thing worth pulling into the north-star doc" in today's log. **Do not edit `north-star.md`.** That's Friday's job — these flags accumulate through the week and get reviewed together.
 
-### 5. Stop
+### 5. Commit & push
+
+Per `AGENTS.md` ("Persist the work"), stage and commit the files this ritual touched, then push if a remote exists.
+
+- **Files to stage:** `daily-log/YYYY-MM-DD.md`.
+- **Commit message:** `Evening reflection for YYYY-MM-DD` (today's date).
+
+The morning intent for the same file should already be committed from `/start-day`, so this commit will only contain the evening additions — that's expected.
+
+### 6. Stop
 
 Keep the structured ritual under 5 minutes. If the user wants to keep talking after, that's fine — but don't extend the ritual itself. A short honest entry beats a long dutiful one.
 

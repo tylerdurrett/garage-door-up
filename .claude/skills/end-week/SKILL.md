@@ -91,7 +91,16 @@ Before they publish, walk through these five questions one at a time:
 
 Don't quiz the user — read each question, let them sit with it, and only edit if their answer reveals a real problem.
 
-### 7. Stop
+### 7. Commit & push
+
+Per `AGENTS.md` ("Persist the work"), stage and commit the files this ritual touched, then push if a remote exists.
+
+- **Files to stage:** `north-star.md`, `weekly-posts/week-NN-post.md`.
+- **Commit message:** `Weekly post for week NN (YYYY-MM-DD)` (use the same NN from step 4 and today's date).
+
+**Push confirmation carve-out:** the weekly post is the one ritual that produces a public artifact. If the user has flagged anything in this project as private (per "Honor the boundaries" in `AGENTS.md`), confirm once before pushing — _"Ready to push the week NN post publicly?"_ Otherwise, push silently like the other rituals.
+
+### 8. Stop
 
 The user publishes (or doesn't). Don't push for a polished close — sometimes the best move is to leave the post slightly rough and ship it. Garage door up.
 

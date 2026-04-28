@@ -35,7 +35,16 @@ If the answer is small or situational, naming it out loud is enough. Don't write
 
 If the answer is structural (a recurring conflict, a constraint that will keep biting), append it to §7 Open Questions on `north-star.md`. One bullet, the user's words.
 
-### 4. Stop
+### 4. Commit & push
+
+Per `AGENTS.md` ("Persist the work"), stage and commit the files this ritual touched, then push if a remote exists.
+
+- **Files to stage:** `north-star.md`.
+- **Commit message:** `Plan-week grounding for YYYY-MM-DD` (today's date).
+
+If the user kept the "Now" line as-is and the only change was the `_Last touched:_` date, still commit — the date update is the artifact that proves the week was grounded.
+
+### 5. Stop
 
 Do not break the "Now" into per-day subtasks. Do not plan Tuesday. Do not coach on energy management. The deliverable is one confirmed-or-revised line and a fresh `_Last touched:_` date. The user's job from here is to do the work — `/start-day` will surface this same line on Monday morning.
 

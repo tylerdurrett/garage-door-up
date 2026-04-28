@@ -50,7 +50,14 @@ If the user resists pushback, capture their version and move on. The point is to
 
 Skip on calm days. Ask on busy ones: _"What's most likely to eat the day if it happens?"_ Capture under "Most likely derailment."
 
-### 6. Stop
+### 6. Commit & push
+
+Per `AGENTS.md` ("Persist the work"), stage and commit the files this ritual touched, then push if a remote exists.
+
+- **Files to stage:** `daily-log/YYYY-MM-DD.md`.
+- **Commit message:** `Morning intent for YYYY-MM-DD` (today's date).
+
+### 7. Stop
 
 Do not start coaching, breaking down the task, or expanding scope. The user's job from here is to do the work.
 
