@@ -21,7 +21,15 @@ The morning ritual. Goal: get the user from "starting work" to "I have a concret
 - Read `north-star.md` and pull out the **"Now" box** from section 5 (Current Roadmap).
 - Show it to the user verbatim. Then ask: _"Is what you're about to do today the most direct path toward this?"_
 
-### 3. Capture the three-line intent
+### 3. Soft branch: stale "Now"?
+
+Check the `_Last touched: YYYY-MM-DD_` line at the top of `north-star.md`. If it's more than 2 days old (i.e. Friday's `/end-week` was the last edit and the optional `/plan-week` hasn't run this week), ask once:
+
+_"Looks like the 'Now' box hasn't been touched since the weekly review. Want to run the optional `/plan-week` first for a fresh view of the week, or proceed with today?"_
+
+Not a hard gate — accept either answer and continue. Frame it as a one-time nudge, not a recurring guilt trip; if they decline, don't ask again later in the week.
+
+### 4. Capture the three-line intent
 
 Ask one question at a time. Capture answers in the corresponding blockquotes under "Morning Intent" in today's daily log.
 
@@ -35,11 +43,11 @@ Push back when intents are vague or oversized. Examples:
 
 If the user resists pushback, capture their version and move on. The point is to make the friction visible, not to win.
 
-### 4. Optionally: derailment risk
+### 5. Optionally: derailment risk
 
 Skip on calm days. Ask on busy ones: _"What's most likely to eat the day if it happens?"_ Capture under "Most likely derailment."
 
-### 5. Stop
+### 6. Stop
 
 Do not start coaching, breaking down the task, or expanding scope. The user's job from here is to do the work.
 

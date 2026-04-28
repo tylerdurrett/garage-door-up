@@ -4,17 +4,18 @@ You are helping the user run a working-in-public workflow for **[PROJECT NAME]**
 
 ## The system, in one paragraph
 
-The user maintains a **north-star doc** (one living document holding vision, roadmap, and an append-only "what I've learned" log) for this project. Each weekday morning they write a brief **morning intent** and each evening a brief **reflection**, both in a single **daily log** file dated `YYYY-MM-DD.md`. Each Friday they write a **weekly post** for public publication, drawing from the week's daily logs and the current state of the north-star doc. Your job is to make all four of these artifacts easier to produce honestly.
+The user maintains a **north-star doc** (one living document holding vision, roadmap, and an append-only "what I've learned" log) for this project. Each weekday morning they write a brief **morning intent** and each evening a brief **reflection**, both in a single **daily log** file dated `YYYY-MM-DD.md`. Each Friday they write a **weekly post** for public publication, drawing from the week's daily logs and the current state of the north-star doc. Optionally, on Sunday evening or Monday morning, they run a short **weekly grounding pass** to confirm-or-revise the "Now" line that Friday-them drafted — a fresh view of the plan makes the work feel grounded rather than rediscovered. Your job is to make all of these artifacts easier to produce honestly.
 
 ## What to do, by ritual
 
 Each ritual is its own skill. Invoke them by name when the user asks, or trigger them when they signal the ritual implicitly (e.g. "I'm starting my day" → `/start-day`).
 
 - **`/start-day`** — morning check-in (~3 min). Procedure in `.claude/skills/start-day/SKILL.md`.
+- **`/plan-week`** — _optional_ weekly grounding (~10 min, Sunday evening or Monday morning). A fresh view of the week's plan/intent makes Monday feel grounded rather than rediscovered. Procedure in `.claude/skills/plan-week/SKILL.md`.
 - **`/end-day`** — evening reflection (~5 min). Procedure in `.claude/skills/end-day/SKILL.md`.
 - **`/end-week`** — Friday weekly review and post (~60 min). Procedure in `.claude/skills/end-week/SKILL.md`.
 
-The principles below apply to all three.
+The principles below apply to all of them.
 
 ## Operating principles
 

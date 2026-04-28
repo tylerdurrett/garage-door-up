@@ -1,11 +1,11 @@
 ---
 name: north-star
-description: Project-initialization ritual. Walks the user through filling out a new north-star.md from templates/north-star-template.md and replaces [PROJECT NAME] in AGENTS.md. Use the first time someone runs this template repo, or when the user says "/north-star", "initialize the north star", "seed the north star doc", "set up this project", "I just cloned this", or otherwise signals they're starting a brand-new project. Takes ~15 minutes.
+description: Project-initialization ritual. Walks the user through filling out a new north-star.md from templates/north-star-template.md, asks once whether they want to ground the week on Sunday evening or Monday morning, and substitutes [PROJECT NAME] in AGENTS.md and [PLAN-WEEK TIMING] in README.md. Use the first time someone runs this template repo, or when the user says "/north-star", "initialize the north star", "seed the north star doc", "set up this project", "I just cloned this", or otherwise signals they're starting a brand-new project. Takes ~15 minutes.
 ---
 
 # North Star
 
-The kickoff ritual. Goal: leave the user with a `north-star.md` they actually believe in and an `AGENTS.md` that knows the project's name. The North Star doc is the spine of `/start-day`, `/end-day`, and `/end-week` — a vague or aspirational first fill-out compromises every downstream ritual, so push back on weak answers in the same voice as the other skills. Do not write the user's content for them.
+The kickoff ritual. Goal: leave the user with a `north-star.md` they actually believe in, an `AGENTS.md` that knows the project's name, and a `README.md` that names their preferred weekly-grounding day. The North Star doc is the spine of `/start-day`, `/plan-week`, `/end-day`, and `/end-week` — a vague or aspirational first fill-out compromises every downstream ritual, so push back on weak answers in the same voice as the other skills. Do not write the user's content for them.
 
 ## Procedure
 
@@ -60,24 +60,43 @@ Leave these as the template ships them — do not prompt the user:
 - Set `_Last touched:_` to today's date (`YYYY-MM-DD`).
 - Default status to `🌱 shaping`. Ask only if the user wants something different.
 
-### 6. Write `north-star.md`
+### 6. Pick the weekly grounding timing
+
+Ask once: _"`/plan-week` is an optional ~10-min weekly grounding pass — going into Monday with a fresh view of the plan helps the work feel grounded rather than rediscovered. Do you prefer Sunday evening, Monday morning, or to skip it for now?"_
+
+Map the answer to one of three phrases — these will be substituted into `README.md` in step 8:
+
+- **Sunday evening** → `each Sunday evening`
+- **Monday morning** → `each Monday morning`
+- **Skip / not sure** → `when it suits you`
+
+The skip-for-now phrasing keeps the door open without committing the user to a day.
+
+### 7. Write `north-star.md`
 
 Create the file at the repo root with all of the above filled in. Use the template's structure verbatim — same headings, same order, same italicized prompt lines (those prompts help future-you on weekly reviews).
 
-### 7. Update `AGENTS.md`
+### 8. Update `AGENTS.md` and `README.md`
 
-Replace the single occurrence of `[PROJECT NAME]` in `AGENTS.md` with the project name from step 2. Do not edit anything else in that file.
+- Replace the single occurrence of `[PROJECT NAME]` in `AGENTS.md` with the project name from step 2. Do not edit anything else in that file.
+- Replace the single occurrence of `[PLAN-WEEK TIMING]` in `README.md` with the phrase chosen in step 6. Do not edit anything else in that file.
 
-### 8. Read it back
+### 9. Read it back
 
 Show the user their final one-liner and vision. Ask: _"Does the one-liner still feel true after writing it out?"_ A "no" here is the most useful signal of the session — invite them to revise on the spot before stopping.
 
-### 9. Stop
+Then add a one-line pointer based on their step 6 answer:
 
-Point them at `/start-day` for the next morning. Do not coach further, expand scope, or start working on the project itself.
+- If they chose Sunday or Monday: _"You can run `/plan-week` [chosen timing] to ground the week, or skip it. `/start-day` runs daily either way."_
+- If they chose skip: _"`/plan-week` is there if you want it later. `/start-day` runs daily either way."_
+
+### 10. Stop
+
+Point them at `/start-day` for the next morning (and `/plan-week` for their chosen day, if they picked one). Do not coach further, expand scope, or start working on the project itself.
 
 ## Files touched
 
 - `north-star.md` (repo root) — **create.**
 - `AGENTS.md` (repo root) — single string replacement of `[PROJECT NAME]`.
+- `README.md` (repo root) — single string replacement of `[PLAN-WEEK TIMING]`.
 - `templates/north-star-template.md` — read only (seed).

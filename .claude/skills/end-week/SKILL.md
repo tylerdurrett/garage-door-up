@@ -25,7 +25,7 @@ The user reads your read of the week before they start their own. This is the in
 Walk through `north-star.md` with the user, section by section. Edit in place.
 
 - **Section 1 (One-Liner):** ask _"Is the one-liner still true?"_ Rewrite if needed.
-- **Section 5 (Current Roadmap):** roll completed items into "Done" (keep last 5 only). Rewrite "Now" / "Next" / "Later" based on what the week revealed.
+- **Section 5 (Current Roadmap):** roll completed items into "Done" (keep last 5 only). Rewrite "Now" / "Next" / "Later" based on what the week revealed. The "Now" line written here is the **draft** that the optional `/plan-week` will confirm or revise on Sunday/Monday — fine to leave it provisional, that's the point. If the user doesn't run `/plan-week`, this same line is what `/start-day` surfaces all next week, so it should still be a good-faith best guess, not a placeholder.
 - **Section 6 (What I've Learned):** append a new `## Week of YYYY-MM-DD` heading with 1–3 bullets drawn from the week's daily logs (especially the "one thing worth pulling into the north-star doc" lines). This section is **append-only** — never edit older entries.
 - **Section 7 (Open Questions):** add new ones; strike resolved ones.
 - **Section 8 (Decisions Log):** if a real call was made this week (architecture, scope, naming), add a row with date and one-line "why."
