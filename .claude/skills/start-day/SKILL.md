@@ -13,7 +13,7 @@ The morning ritual. Goal: get the user from "starting work" to "I have a concret
 
 - Compute today's date as `YYYY-MM-DD`.
 - Check for `daily-log/YYYY-MM-DD.md`.
-- If missing: create the `daily-log/` directory if it doesn't exist, then copy `templates/daily-log-template.md` into the new file. Replace the `YYYY-MM-DD` placeholder in the H1 with today's date.
+- If missing: create the `daily-log/` directory if it doesn't exist, then copy `templates/daily-log-template.md` into the new file. Replace the `YYYY-MM-DD` placeholder in the H1 with today's date. Also strip the template-only helper line `_One file per day. Morning at the top, evening at the bottom. Keep it in the same folder as your north-star doc._` and the blank line that follows it — that note belongs on the template for whoever opens it, not in every daily log.
 - If present: open it. If the morning section is already filled in, ask the user whether they want to add to it or skip the morning ritual.
 
 ### 2. Surface the roadmap
@@ -49,6 +49,8 @@ If the user resists pushback, capture their version and move on. The point is to
 ### 5. Optionally: derailment risk
 
 Skip on calm days. Ask on busy ones: _"What's most likely to eat the day if it happens?"_ Capture under "Most likely derailment."
+
+**If you skip the question** (or the user declines), delete the entire `**Most likely derailment:**` heading and its placeholder blockquote from today's log — an unused placeholder is just visual noise.
 
 ### 6. Commit & push
 
