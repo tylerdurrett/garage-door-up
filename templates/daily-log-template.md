@@ -42,6 +42,12 @@ _Raw. Stream of consciousness is fine. Future-you and weekly-post-you both benef
 
 ---
 
+## 📌 Promised for later
+
+_Forward-promises captured throughout the day — pulled in by the next `/start-day`. Each item: `- [YYYY-MM-DD or "later"] — what you said you'd do`. Leave the section empty if nothing came up; the agent will append items as they're mentioned._
+
+---
+
 ### Notes & scratch
 
 _Anything else — links, half-thoughts, frustrations, code snippets, screenshots. No structure required._

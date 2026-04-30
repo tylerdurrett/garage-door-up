@@ -16,16 +16,17 @@ The morning ritual. Goal: get the user from "starting work" to "I have a concret
 - If missing: create the `daily-log/` directory if it doesn't exist, then copy `templates/daily-log-template.md` into the new file. Replace the `YYYY-MM-DD` placeholder in the H1 with today's date. Also strip the template-only helper line `_One file per day. Morning at the top, evening at the bottom. Keep it in the same folder as your north-star doc._` and the blank line that follows it — that note belongs on the template for whoever opens it, not in every daily log.
 - If present: open it. If the morning section is already filled in, ask the user whether they want to add to it or skip the morning ritual.
 
-### 2. Surface the why and the priorities
+### 2. Surface the why, the priorities, and any carry-overs
 
-Read `north-star.md` and show the user two things, in this order:
+Read `north-star.md` and the most recent prior `daily-log/*.md` (yesterday's, or further back if there was a gap). Show the user three things, in this order:
 
 1. **Why this matters** — pull 1–2 bullets from section 2 ("Why This Matters") and show them as a brief reminder. Pick the bullets that feel most live this week, not all of them. This is a short grounding moment ("here's why you're doing this at all"), not a recital — keep it to a couple of lines.
 2. **The "Now" box** from section 5 (Current Roadmap) — show verbatim. This is the current priority.
+3. **Carry-overs from your last log** — read the `## 📌 Promised for later` section in the most recent prior daily log. Surface any item dated today-or-earlier, or undated (`[later]`). Format as a short bulleted list, preserving the original wording. If the section is missing or has no qualifying items, skip silently — don't announce its absence. Items dated for a future day (e.g. `[2026-05-07]` when today is 2026-04-30) stay buried and will surface on their target day.
 
 Then ask: _"What slice of the Now box are you carving out for today?"_
 
-The Now box is a week-sized chunk; the morning intent is a day-sized slice carved out of it. Phrase the question to help the user **choose** today's slice, not to verify a pre-chosen one — many mornings the user is using this ritual to figure out what today is, not to confirm it. Acceptable slices include a sub-component, a decision (e.g. "pick SQS vs Postgres"), a spike, a UI sketch, or a planning/architecture pass — anything day-sized that moves the week forward.
+The Now box is a week-sized chunk; the morning intent is a day-sized slice carved out of it. Phrase the question to help the user **choose** today's slice, not to verify a pre-chosen one — many mornings the user is using this ritual to figure out what today is, not to confirm it. Acceptable slices include a sub-component, a decision (e.g. "pick SQS vs Postgres"), a spike, a UI sketch, or a planning/architecture pass — anything day-sized that moves the week forward. If a carry-over item is the natural slice, the user can just point to it.
 
 ### 3. Soft branch: stale "Now"?
 

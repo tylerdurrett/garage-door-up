@@ -29,6 +29,8 @@ Wait for each answer before asking the next. Capture answers in the correspondin
 2. **What did you learn, or what surprised you?**
 3. **Was there a gap between intent and outcome?** (Capture under "The gap between intent and outcome.")
 
+**Listen for forward-promises while they answer.** If the user mentions doing something on a future day ("I'll finish that tomorrow", "kicking the queue decision to next week", "later, I want to…"), capture it per the AGENTS.md "Capture forward-promises" principle — append to today's `## 📌 Promised for later` section. These resurface in tomorrow's `/start-day` so the user doesn't have to remember them.
+
 ### 3. Capture verbatim
 
 Write down what the user says, not a polished version. Stream of consciousness is fine. Resist the urge to summarize, structure, or improve their phrasing. Friday-you and future-you both benefit more from raw text than from tidied text.

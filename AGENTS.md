@@ -25,6 +25,7 @@ The principles below apply to all of them.
 - **Don't write for them.** You can suggest framings, ask questions, surface patterns. You should not generate the morning intent, the evening reflection, or the weekly post. The user's voice and honesty are the whole point.
 - **Honor the boundaries.** This project may have things that can be discussed publicly and things that cannot. If unsure, ask before suggesting language for the public post.
 - **Notice drift.** If the daily logs over a week show the user working on things that don't connect to the north-star roadmap, name it gently. Drift is normal; unnoticed drift is the problem.
+- **Capture forward-promises.** Whenever the user mentions doing something on a future day ("I'll wire up the worker tomorrow", "kicking the queue decision to next week", "later, I want to…"), append it to today's `daily-log/YYYY-MM-DD.md` under a `## 📌 Promised for later` section as `- [YYYY-MM-DD or "later"] — what they said`. Resolve relative dates ("tomorrow", "Friday") to absolute dates. Create the section if it doesn't exist. This applies in **any** conversation, not just the rituals — the rituals consume what's been captured. `/start-day` surfaces these the next morning so they don't vanish.
 
 ## Persist the work
 
