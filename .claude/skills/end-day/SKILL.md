@@ -1,6 +1,6 @@
 ---
 name: end-day
-description: Evening reflection ritual. Walks the user through three reflection questions and captures answers verbatim into today's daily log as raw material for Friday's weekly post. Use when the user says "/end-day", "evening reflection", "wrapping up", "done for the day", "end of day", or otherwise signals they're closing out the workday. Should take ~5 minutes.
+description: Evening reflection ritual. Reads back this morning's intent, then walks the user through three reflection questions and captures answers verbatim into today's daily log as raw material for Friday's weekly post. Use when the user says "/end-day", "evening reflection", "wrapping up", "done for the day", "end of day", or otherwise signals they're closing out the workday. Should take ~5 minutes.
 ---
 
 # End Day
@@ -15,7 +15,13 @@ The evening ritual. Goal: capture honest raw material from the day before it eva
 - Open `daily-log/YYYY-MM-DD.md`.
 - If it doesn't exist, note that there's no morning intent to reflect against and offer to create the file from `templates/daily-log-template.md`. Do not refuse to run — the ritual still has value without a morning entry.
 
-### 2. Ask three questions, one at a time
+### 2. Surface this morning's intent
+
+Before asking the reflection questions, read the "Morning Intent" section from today's log and show it back to the user — the three lines they wrote (working on / because / done looks like), plus the "Most likely derailment" line if it's there. This grounds the reflection against what they said they'd do, not against a hazy memory of the day.
+
+If the morning section is empty or missing (e.g. they skipped `/start-day` today), say so in one line and continue — the reflection still has value without a morning anchor.
+
+### 3. Ask three questions, one at a time
 
 Wait for each answer before asking the next. Capture answers in the corresponding sections under "Evening Reflection" in today's daily log.
 
